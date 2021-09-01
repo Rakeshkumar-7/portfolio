@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const NavBarContainer = styled.div`
+    /* background:red; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 30px 15px;
-    /* background:red; */
 `;
 
 export const Title = styled.div`
@@ -13,19 +13,24 @@ export const Title = styled.div`
     font-weight: 800;
     text-align: center;
     justify-self: start;
-    /* grid-column-start: auto; */
+
+    & > *{
+        text-decoration: none;
+        color: ${props=>props.color||"#000"}
+    }
 `;
 
 export const SocialIconsList = styled.div`
-    align-self: center;
     position: relative;
     height: 100%;
     justify-self: end;
+    align-content:center;
+    top: 5px;
 
     & > a{
-        align-self: center;
-        height: 100%;
-        margin: 0 5px;
+        /* background: blue; */
+        vertical-align: middle;
+        margin: 0 10px;
         text-decoration: none;
         color: ${props => props.color || "#000"}
     }

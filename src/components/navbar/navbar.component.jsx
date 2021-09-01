@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { VscGithub, VscTwitter } from "react-icons/vsc";
 import { FaInstagram } from "react-icons/fa";
 
@@ -27,7 +28,7 @@ const NavBar = () => {
     return (
         <NavBarContainer>
             <Title>
-                Rakesh Kumar
+                <Link to="/">Rakesh Kumar</Link>
             </Title>
             <LinkList links={links} />
             <SocialIconsList>

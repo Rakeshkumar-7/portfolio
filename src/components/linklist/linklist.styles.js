@@ -10,4 +10,9 @@ export const PageLink = styled(Link)`
     text-decoration: none;
     color: black;
     font-weight: 600;
+    transition: all ease-in-out 300ms;
+
+    &:hover{
+        text-shadow: 0 2px 10px rgba(77,77,77,0.2);
+    }
 `;
